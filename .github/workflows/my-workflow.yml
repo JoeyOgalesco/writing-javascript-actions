@@ -1,14 +1,12 @@
-# name: "JS Actions"
+name: Docker Actions
 
- on: [push]
+on: [push]
 
- jobs:
-   action:
-     runs-on: "ubuntu-latest"
-     steps:
-       - uses: actions/checkout@v1
+jobs:
+  action:
+    runs-on: ubuntu-latest
 
-       - name: "hello-action"
-         uses: ./.github/actions/hello-world
-         with:
-           first-greeting: "Learning Lab User"  
+    steps:
+      - uses: actions/checkout@v1
+
+      
